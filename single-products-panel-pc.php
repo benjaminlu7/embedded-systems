@@ -29,8 +29,8 @@ perform their jobs.
                         <?php the_title('<h1 class="entry-title">', '</h1>'); ?>
                     </header>
                     <div class="entry-content">
-                        <div class="front-grid-systems-row">
-                            <div class="front-grid-systems-column">
+                        <div class="grid-systems-row">
+                            <div class="grid-systems-column">
                                 <?php 
                                     $query = new WP_Query(array(
                                         'post_type' => 'products',      
@@ -40,7 +40,7 @@ perform their jobs.
                                             array(
                                                 'taxonomy' => 'products_categories',
                                                 'field'    => 'slug',
-                                                'terms'    => array('pdx-057t'),
+                                                'terms'    => array('ppc-150t-apl'),
                                             ),
                                         ),
                                     )); 
@@ -62,7 +62,103 @@ perform their jobs.
                                     <?php wp_reset_postdata(); ?>
                                 <?php } ?>
                             </div>
-                            <div class="front-grid-systems-column">
+                            <div class="grid-systems-column">
+                                <?php 
+                                    $query = new WP_Query(array(
+                                        'post_type' => 'products',      
+                                        'post_per_page' => 9,
+                                        'tax_query' => array(
+                                            'relation' => 'AND',
+                                            array(
+                                                'taxonomy' => 'products_categories',
+                                                'field'    => 'slug',
+                                                'terms'    => array('ppc-104t-apl'),
+                                            ),
+                                        ),
+                                    )); 
+                                ?>
+                                <?php if ($query->have_posts()) { ?>
+                                    <?php while ($query->have_posts()) { ?>
+                                        <?php $query->the_post(); ?>
+                                            <?php if (has_post_thumbnail()) { ?>
+                                                <a href="<?php the_permalink(); ?>">
+                                                    <?php the_post_thumbnail(); ?>
+                                                    <div class="arduino-caption">
+                                                        <div class="arduino-caption-text">
+                                                            <?php the_title(); ?>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            <?php } ?>
+                                    <?php } ?>
+                                    <?php wp_reset_postdata(); ?>
+                                <?php } ?>
+                            </div>
+                            <div class="grid-systems-column">
+                                <?php 
+                                    $query = new WP_Query(array(
+                                        'post_type' => 'products',      
+                                        'post_per_page' => 9,
+                                        'tax_query' => array(
+                                            'relation' => 'AND',
+                                            array(
+                                                'taxonomy' => 'products_categories',
+                                                'field'    => 'slug',
+                                                'terms'    => array('ppc-090t-apl'),
+                                            ),
+                                        ),
+                                    )); 
+                                ?>
+                                <?php if ($query->have_posts()) { ?>
+                                    <?php while ($query->have_posts()) { ?>
+                                        <?php $query->the_post(); ?>
+                                            <?php if (has_post_thumbnail()) { ?>
+                                                <a href="<?php the_permalink(); ?>">
+                                                    <?php the_post_thumbnail(); ?>
+                                                    <div class="arduino-caption">
+                                                        <div class="arduino-caption-text">
+                                                            <?php the_title(); ?>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            <?php } ?>
+                                    <?php } ?>
+                                    <?php wp_reset_postdata(); ?>
+                                <?php } ?>
+                            </div>
+                            <div class="grid-systems-column">
+                                <?php 
+                                    $query = new WP_Query(array(
+                                        'post_type' => 'products',      
+                                        'post_per_page' => 9,
+                                        'tax_query' => array(
+                                            'relation' => 'AND',
+                                            array(
+                                                'taxonomy' => 'products_categories',
+                                                'field'    => 'slug',
+                                                'terms'    => array('ptrd-090t'),
+                                            ),
+                                        ),
+                                    )); 
+                                ?>
+                                <?php if ($query->have_posts()) { ?>
+                                    <?php while ($query->have_posts()) { ?>
+                                        <?php $query->the_post(); ?>
+                                            <?php if (has_post_thumbnail()) { ?>
+                                                <a href="<?php the_permalink(); ?>">
+                                                    <?php the_post_thumbnail(); ?>
+                                                    <div class="arduino-caption">
+                                                        <div class="arduino-caption-text">
+                                                            <?php the_title(); ?>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            <?php } ?>
+                                    <?php } ?>
+                                    <?php wp_reset_postdata(); ?>
+                                <?php } ?>
+                            </div>
+                            <div class="grid-systems-column">
                                 <?php 
                                     $query = new WP_Query(array(
                                         'post_type' => 'products', 
@@ -94,7 +190,7 @@ perform their jobs.
                                     <?php wp_reset_postdata(); ?>
                                 <?php } ?>
                             </div>
-                            <div class="front-grid-systems-column">
+                            <div class="grid-systems-column">
                                 <?php 
                                     $query = new WP_Query(array(
                                         'post_type' => 'products', 
@@ -126,7 +222,7 @@ perform their jobs.
                                     <?php wp_reset_postdata(); ?>
                                 <?php } ?>
                             </div>
-                            <div class="front-grid-systems-column">
+                            <div class="grid-systems-column">
                                 <?php 
                                     $query = new WP_Query(array(
                                         'post_type' => 'products', 
