@@ -193,6 +193,166 @@ perform their jobs.
                             <div class="grid-systems-column">
                                 <?php 
                                     $query = new WP_Query(array(
+                                        'post_type' => 'products',      
+                                        'post_per_page' => 9,
+                                        'tax_query' => array(
+                                            'relation' => 'AND',
+                                            array(
+                                                'taxonomy' => 'products_categories',
+                                                'field'    => 'slug',
+                                                'terms'    => array('pex-057t'),
+                                            ),
+                                        ),
+                                    )); 
+                                ?>
+                                <?php if ($query->have_posts()) { ?>
+                                    <?php while ($query->have_posts()) { ?>
+                                        <?php $query->the_post(); ?>
+                                            <?php if (has_post_thumbnail()) { ?>
+                                                <a href="<?php the_permalink(); ?>">
+                                                    <?php the_post_thumbnail(); ?>
+                                                    <div class="arduino-caption">
+                                                        <div class="arduino-caption-text">
+                                                            <?php the_title(); ?>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            <?php } ?>
+                                    <?php } ?>
+                                    <?php wp_reset_postdata(); ?>
+                                <?php } ?>
+                            </div>
+                            <div class="grid-systems-column">
+                                <?php 
+                                    $query = new WP_Query(array(
+                                        'post_type' => 'products',      
+                                        'post_per_page' => 9,
+                                        'tax_query' => array(
+                                            'relation' => 'AND',
+                                            array(
+                                                'taxonomy' => 'products_categories',
+                                                'field'    => 'slug',
+                                                'terms'    => array('pdx3-090t'),
+                                            ),
+                                        ),
+                                    )); 
+                                ?>
+                                <?php if ($query->have_posts()) { ?>
+                                    <?php while ($query->have_posts()) { ?>
+                                        <?php $query->the_post(); ?>
+                                            <?php if (has_post_thumbnail()) { ?>
+                                                <a href="<?php the_permalink(); ?>">
+                                                    <?php the_post_thumbnail(); ?>
+                                                    <div class="arduino-caption">
+                                                        <div class="arduino-caption-text">
+                                                            <?php the_title(); ?>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            <?php } ?>
+                                    <?php } ?>
+                                    <?php wp_reset_postdata(); ?>
+                                <?php } ?>
+                            </div>
+                            <div class="grid-systems-column">
+                                <?php 
+                                    $query = new WP_Query(array(
+                                        'post_type' => 'products',      
+                                        'post_per_page' => 9,
+                                        'tax_query' => array(
+                                            'relation' => 'AND',
+                                            array(
+                                                'taxonomy' => 'products_categories',
+                                                'field'    => 'slug',
+                                                'terms'    => array('pdx3-057t'),
+                                            ),
+                                        ),
+                                    )); 
+                                ?>
+                                <?php if ($query->have_posts()) { ?>
+                                    <?php while ($query->have_posts()) { ?>
+                                        <?php $query->the_post(); ?>
+                                            <?php if (has_post_thumbnail()) { ?>
+                                                <a href="<?php the_permalink(); ?>">
+                                                    <?php the_post_thumbnail(); ?>
+                                                    <div class="arduino-caption">
+                                                        <div class="arduino-caption-text">
+                                                            <?php the_title(); ?>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            <?php } ?>
+                                    <?php } ?>
+                                    <?php wp_reset_postdata(); ?>
+                                <?php } ?>
+                            </div>
+                            <div class="grid-systems-column">
+                                <?php 
+                                    $query = new WP_Query(array(
+                                        'post_type' => 'products',      
+                                        'post_per_page' => 9,
+                                        'tax_query' => array(
+                                            'relation' => 'AND',
+                                            array(
+                                                'taxonomy' => 'products_categories',
+                                                'field'    => 'slug',
+                                                'terms'    => array('pdx2-090t'),
+                                            ),
+                                        ),
+                                    )); 
+                                ?>
+                                <?php if ($query->have_posts()) { ?>
+                                    <?php while ($query->have_posts()) { ?>
+                                        <?php $query->the_post(); ?>
+                                            <?php if (has_post_thumbnail()) { ?>
+                                                <a href="<?php the_permalink(); ?>">
+                                                    <?php the_post_thumbnail(); ?>
+                                                    <div class="arduino-caption">
+                                                        <div class="arduino-caption-text">
+                                                            <?php the_title(); ?>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            <?php } ?>
+                                    <?php } ?>
+                                    <?php wp_reset_postdata(); ?>
+                                <?php } ?>
+                            </div>
+                            <div class="grid-systems-column">
+                                <?php 
+                                    $query = new WP_Query(array(
+                                        'post_type' => 'products',      
+                                        'post_per_page' => 9,
+                                        'tax_query' => array(
+                                            'relation' => 'AND',
+                                            array(
+                                                'taxonomy' => 'products_categories',
+                                                'field'    => 'slug',
+                                                'terms'    => array('pdx2-057t'),
+                                            ),
+                                        ),
+                                    )); 
+                                ?>
+                                <?php if ($query->have_posts()) { ?>
+                                    <?php while ($query->have_posts()) { ?>
+                                        <?php $query->the_post(); ?>
+                                            <?php if (has_post_thumbnail()) { ?>
+                                                <a href="<?php the_permalink(); ?>">
+                                                    <?php the_post_thumbnail(); ?>
+                                                    <div class="arduino-caption">
+                                                        <div class="arduino-caption-text">
+                                                            <?php the_title(); ?>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            <?php } ?>
+                                    <?php } ?>
+                                    <?php wp_reset_postdata(); ?>
+                                <?php } ?>
+                            </div>
+                            <div class="grid-systems-column">
+                                <?php 
+                                    $query = new WP_Query(array(
                                         'post_type' => 'products', 
                                         'post_per_page' => 9,
                                         'tax_query' => array(
@@ -201,6 +361,70 @@ perform their jobs.
                                                 'taxonomy' => 'products_categories',
                                                 'field'    => 'slug',
                                                 'terms'    => array('pdx-090t'),
+                                            ),
+                                        ),
+                                    )); 
+                                ?>
+                                <?php if ($query->have_posts()) { ?>
+                                    <?php while ($query->have_posts()) { ?>
+                                        <?php $query->the_post(); ?>
+                                            <?php if (has_post_thumbnail()) { ?>
+                                                <a href="<?php the_permalink(); ?>">
+                                                    <?php the_post_thumbnail(); ?>
+                                                    <div class="arduino-caption">
+                                                        <div class="arduino-caption-text">
+                                                            <?php the_title(); ?>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            <?php } ?>
+                                    <?php } ?>
+                                    <?php wp_reset_postdata(); ?>
+                                <?php } ?>
+                            </div>
+                            <div class="grid-systems-column">
+                                <?php 
+                                    $query = new WP_Query(array(
+                                        'post_type' => 'products', 
+                                        'post_per_page' => 9,
+                                        'tax_query' => array(
+                                            'relation' => 'AND',
+                                            array(
+                                                'taxonomy' => 'products_categories',
+                                                'field'    => 'slug',
+                                                'terms'    => array('pdx-057t'),
+                                            ),
+                                        ),
+                                    )); 
+                                ?>
+                                <?php if ($query->have_posts()) { ?>
+                                    <?php while ($query->have_posts()) { ?>
+                                        <?php $query->the_post(); ?>
+                                            <?php if (has_post_thumbnail()) { ?>
+                                                <a href="<?php the_permalink(); ?>">
+                                                    <?php the_post_thumbnail(); ?>
+                                                    <div class="arduino-caption">
+                                                        <div class="arduino-caption-text">
+                                                            <?php the_title(); ?>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            <?php } ?>
+                                    <?php } ?>
+                                    <?php wp_reset_postdata(); ?>
+                                <?php } ?>
+                            </div>
+                            <div class="grid-systems-column">
+                                <?php 
+                                    $query = new WP_Query(array(
+                                        'post_type' => 'products', 
+                                        'post_per_page' => 9,
+                                        'tax_query' => array(
+                                            'relation' => 'AND',
+                                            array(
+                                                'taxonomy' => 'products_categories',
+                                                'field'    => 'slug',
+                                                'terms'    => array('pmx-090t'),
                                             ),
                                         ),
                                     )); 
@@ -264,7 +488,7 @@ perform their jobs.
                                             array(
                                                 'taxonomy' => 'products_categories',
                                                 'field'    => 'slug',
-                                                'terms'    => array('pmx-090t'),
+                                                'terms'    => array('hmi-043t'),
                                             ),
                                         ),
                                     )); 
