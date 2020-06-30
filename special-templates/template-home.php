@@ -79,7 +79,7 @@ perform their jobs.
                                     <?php while ($query->have_posts()) { ?>
                                         <?php $query->the_post(); ?>
                                             <?php if (has_post_thumbnail()) { ?>
-                                                <a href="<?php the_permalink(); ?>">
+                                                <a href="<?php echo esc_url( home_url( '/products/compact-pc' ) ); ?>">
                                                     <?php the_post_thumbnail(); ?>
                                                     <div class="arduino-caption">
                                                         <div class="arduino-caption-text">
