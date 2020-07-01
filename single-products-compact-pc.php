@@ -158,6 +158,166 @@ perform their jobs.
                                     <?php wp_reset_postdata(); ?>
                                 <?php } ?>
                             </div>
+                            <div class="grid-systems-column">
+                                <?php 
+                                    $query = new WP_Query(array(
+                                        'post_type' => 'products',      
+                                        'post_per_page' => 9,
+                                        'tax_query' => array(
+                                            'relation' => 'AND',
+                                            array(
+                                                'taxonomy' => 'products_categories',
+                                                'field'    => 'slug',
+                                                'terms'    => array('ebox-3350ex'),
+                                            ),
+                                        ),
+                                    )); 
+                                ?>
+                                <?php if ($query->have_posts()) { ?>
+                                    <?php while ($query->have_posts()) { ?>
+                                        <?php $query->the_post(); ?>
+                                            <?php if (has_post_thumbnail()) { ?>
+                                                <a href="<?php the_permalink(); ?>">
+                                                    <?php the_post_thumbnail(); ?>
+                                                    <div class="arduino-caption">
+                                                        <div class="arduino-caption-text">
+                                                            <?php the_title(); ?>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            <?php } ?>
+                                    <?php } ?>
+                                    <?php wp_reset_postdata(); ?>
+                                <?php } ?>
+                            </div>
+                            <div class="grid-systems-column">
+                                <?php 
+                                    $query = new WP_Query(array(
+                                        'post_type' => 'products',      
+                                        'post_per_page' => 9,
+                                        'tax_query' => array(
+                                            'relation' => 'AND',
+                                            array(
+                                                'taxonomy' => 'products_categories',
+                                                'field'    => 'slug',
+                                                'terms'    => array('ebox-3362'),
+                                            ),
+                                        ),
+                                    )); 
+                                ?>
+                                <?php if ($query->have_posts()) { ?>
+                                    <?php while ($query->have_posts()) { ?>
+                                        <?php $query->the_post(); ?>
+                                            <?php if (has_post_thumbnail()) { ?>
+                                                <a href="<?php the_permalink(); ?>">
+                                                    <?php the_post_thumbnail(); ?>
+                                                    <div class="arduino-caption">
+                                                        <div class="arduino-caption-text">
+                                                            <?php the_title(); ?>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            <?php } ?>
+                                    <?php } ?>
+                                    <?php wp_reset_postdata(); ?>
+                                <?php } ?>
+                            </div>
+                            <div class="grid-systems-column">
+                                <?php 
+                                    $query = new WP_Query(array(
+                                        'post_type' => 'products',      
+                                        'post_per_page' => 9,
+                                        'tax_query' => array(
+                                            'relation' => 'AND',
+                                            array(
+                                                'taxonomy' => 'products_categories',
+                                                'field'    => 'slug',
+                                                'terms'    => array('ebox-3310mx'),
+                                            ),
+                                        ),
+                                    )); 
+                                ?>
+                                <?php if ($query->have_posts()) { ?>
+                                    <?php while ($query->have_posts()) { ?>
+                                        <?php $query->the_post(); ?>
+                                            <?php if (has_post_thumbnail()) { ?>
+                                                <a href="<?php the_permalink(); ?>">
+                                                    <?php the_post_thumbnail(); ?>
+                                                    <div class="arduino-caption">
+                                                        <div class="arduino-caption-text">
+                                                            <?php the_title(); ?>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            <?php } ?>
+                                    <?php } ?>
+                                    <?php wp_reset_postdata(); ?>
+                                <?php } ?>
+                            </div>
+                            <div class="grid-systems-column">
+                                <?php 
+                                    $query = new WP_Query(array(
+                                        'post_type' => 'products',      
+                                        'post_per_page' => 9,
+                                        'tax_query' => array(
+                                            'relation' => 'AND',
+                                            array(
+                                                'taxonomy' => 'products_categories',
+                                                'field'    => 'slug',
+                                                'terms'    => array('ebox-3310a'),
+                                            ),
+                                        ),
+                                    )); 
+                                ?>
+                                <?php if ($query->have_posts()) { ?>
+                                    <?php while ($query->have_posts()) { ?>
+                                        <?php $query->the_post(); ?>
+                                            <?php if (has_post_thumbnail()) { ?>
+                                                <a href="<?php the_permalink(); ?>">
+                                                    <?php the_post_thumbnail(); ?>
+                                                    <div class="arduino-caption">
+                                                        <div class="arduino-caption-text">
+                                                            <?php the_title(); ?>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            <?php } ?>
+                                    <?php } ?>
+                                    <?php wp_reset_postdata(); ?>
+                                <?php } ?>
+                            </div>
+                            <div class="grid-systems-column">
+                                <?php 
+                                    $query = new WP_Query(array(
+                                        'post_type' => 'products',      
+                                        'post_per_page' => 9,
+                                        'tax_query' => array(
+                                            'relation' => 'AND',
+                                            array(
+                                                'taxonomy' => 'products_categories',
+                                                'field'    => 'slug',
+                                                'terms'    => array('ebox-2300sx'),
+                                            ),
+                                        ),
+                                    )); 
+                                ?>
+                                <?php if ($query->have_posts()) { ?>
+                                    <?php while ($query->have_posts()) { ?>
+                                        <?php $query->the_post(); ?>
+                                            <?php if (has_post_thumbnail()) { ?>
+                                                <a href="<?php the_permalink(); ?>">
+                                                    <?php the_post_thumbnail(); ?>
+                                                    <div class="arduino-caption">
+                                                        <div class="arduino-caption-text">
+                                                            <?php the_title(); ?>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            <?php } ?>
+                                    <?php } ?>
+                                    <?php wp_reset_postdata(); ?>
+                                <?php } ?>
+                            </div>
                         </div>
                     </div>
                 </article>
