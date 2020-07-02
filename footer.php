@@ -39,7 +39,7 @@ perform their jobs.
             <footer id="site-footer" class="site-footer">
                 <div id="site-info" class="site-info">
                     <h3><?php esc_html_e('ICOP Technology Inc.', 'embedded-systems'); ?></h3>
-                    <small><i class="fa fa-copyright" aria-hidden="true"></i> <?php esc_html_e('1996-2018. All Rights Reserved', 'embedded-systems'); ?></small>
+                    <small><i class="fa fa-copyright" aria-hidden="true"></i> <?php esc_html_e('1996-2020. All Rights Reserved', 'embedded-systems'); ?></small>
                 </div>
             </footer>
         </div>
