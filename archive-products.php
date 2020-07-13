@@ -21,20 +21,20 @@ perform their jobs.
 <?php get_header(); ?>
     <div id="content-area" class="content-area">
         <?php if (have_posts()) : ?>
-                <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                     <div class="entry-content">
                         <div class="front-grid-systems-row">
                             <div class="front-grid-systems-column">
                                 <?php 
                                     $query = new WP_Query(array(
                                         'post_type' => 'products', 
-                                        'post_per_page' => 3,
+                                        'post_per_page' => 1,
                                         'tax_query' => array(
                                             'relation' => 'AND',
                                             array(
                                                 'taxonomy' => 'products_categories',
                                                 'field'    => 'slug',
-                                                'terms'    => array(),
+                                                'terms'    => array('vortex86dx3'),
                                             ),
                                         ),
                                     )); 
@@ -43,11 +43,11 @@ perform their jobs.
                                     <?php while ($query->have_posts()) { ?>
                                         <?php $query->the_post(); ?>
                                             <?php if (has_post_thumbnail()) { ?>
-                                                <a href="<?php the_permalink(); ?>">
+                                                <a href="<?php echo esc_url( home_url( '/products/sbc' ) ); ?>">
                                                     <?php the_post_thumbnail(); ?>
                                                     <div class="arduino-caption">
                                                         <div class="arduino-caption-text">
-                                                            <?php the_title(); ?>
+                                                            <?php esc_html_e( 'Single Board Computers', 'icoptech' ); ?>
                                                         </div>
                                                     </div>
                                                 </a>
@@ -66,7 +66,7 @@ perform their jobs.
                                             array(
                                                 'taxonomy' => 'products_categories',
                                                 'field'    => 'slug',
-                                                'terms'    => array('ebox-2300sx'),
+                                                'terms'    => array('ebox-3310a'),
                                             ),
                                         ),
                                     )); 
@@ -75,11 +75,11 @@ perform their jobs.
                                     <?php while ($query->have_posts()) { ?>
                                         <?php $query->the_post(); ?>
                                             <?php if (has_post_thumbnail()) { ?>
-                                                <a href="<?php the_permalink(); ?>">
+                                                <a href="<?php echo esc_url( home_url( '/products/compact-pc' ) ); ?>">
                                                     <?php the_post_thumbnail(); ?>
                                                     <div class="arduino-caption">
                                                         <div class="arduino-caption-text">
-                                                            <?php the_title(); ?>
+															<?php esc_html_e( 'Compact PC', 'icoptech' ); ?>
                                                         </div>
                                                     </div>
                                                 </a>
@@ -107,11 +107,11 @@ perform their jobs.
                                     <?php while ($query->have_posts()) { ?>
                                         <?php $query->the_post(); ?>
                                             <?php if (has_post_thumbnail()) { ?>
-                                                <a href="<?php the_permalink(); ?>">
+                                                <a href="<?php echo esc_url( home_url( '/products/panel-pc' ) ); ?>">
                                                     <?php the_post_thumbnail(); ?>
                                                     <div class="arduino-caption">
                                                         <div class="arduino-caption-text">
-                                                            <?php the_title(); ?>
+                                                            <?php esc_html_e( 'Panel PC', 'icoptech' ); ?>
                                                         </div>
                                                     </div>
                                                 </a>
@@ -187,7 +187,6 @@ perform their jobs.
                         </div>
                     </div>
                 </article>
-            <?php the_posts_pagination(); ?>
         <?php else : ?>
             <article id="post-0" <?php post_class('post'); ?>>
                 <header class="entry-header">

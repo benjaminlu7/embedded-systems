@@ -257,6 +257,10 @@ iframe {
     max-width: 80em; /* 1280px */
 }
 
+.site-content {
+    margin-bottom: 2em;
+}
+
 .site-main {
     padding: 1.125em;
 }
