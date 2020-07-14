@@ -341,6 +341,38 @@ function embedded_systems_register_sidebars_setup() {
         'before_title'  => '<h2 class="widget-title">',
         'after_title'   => '</h2>',
     ));
+
+    /*
+    ============================================================================================
+    Enable and activate Primary Sidebar for Embedded Systems WordPress Theme. The Primary Sidebar
+    should only show in the blog posts only rather in the pages. 
+    ============================================================================================
+    */
+    register_sidebar(array(
+        'name'          => __('PDX2-057T', 'embedded-systems'),
+        'description'   => __('Add widgets here to appear in your sidebar on Blog Posts and Archives only', 'embedded-systems'),
+        'id'            => 'pdx2-057t',
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</aside>',
+        'before_title'  => '<h2 class="widget-title">',
+        'after_title'   => '</h2>',
+    ));
+
+    /*
+    ============================================================================================
+    Enable and activate Primary Sidebar for Embedded Systems WordPress Theme. The Primary Sidebar
+    should only show in the blog posts only rather in the pages. 
+    ============================================================================================
+    */
+    register_sidebar(array(
+        'name'          => __('PDX2-090T', 'embedded-systems'),
+        'description'   => __('Add widgets here to appear in your sidebar on Blog Posts and Archives only', 'embedded-systems'),
+        'id'            => 'pdx2-090t',
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</aside>',
+        'before_title'  => '<h2 class="widget-title">',
+        'after_title'   => '</h2>',
+    ));
     
     /*
     ============================================================================================
