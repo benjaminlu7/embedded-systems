@@ -43,6 +43,6 @@ perform their jobs.
             <?php endwhile; ?>
             <?php comments_template(); ?>
         </div>
-        <?php get_sidebar('pmx-057t'); ?>
+        <?php get_sidebar('pdx-090t'); ?>
     </div>
 <?php get_footer(); ?>
